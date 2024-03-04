@@ -111,3 +111,23 @@ const isFullAge = ageRafael >= 18;
 
 console.log(now - 1991 > now - 2004);
 */
+
+
+//      OPERATOR PRECEDENCE
+
+/*
+const now = 2024;
+const ageRafael = now - 2004;
+const ageSarah = now - 1991;
+
+console.log(now - 1991 > now - 2004);
+
+let x, y;
+x = y = 25 - 10 - 5;
+console.log(x, y);
+
+// const averageAge = ageRafael + ageSarah / 2;  "/" operator has higher precedence then "+" so it'll be done first = wrong
+const averageAge = (ageRafael + ageSarah) / 2; // the right way with ()
+console.log(ageRafael, ageSarah, averageAge);
+*/
+
