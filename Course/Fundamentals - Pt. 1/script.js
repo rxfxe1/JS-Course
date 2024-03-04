@@ -320,3 +320,34 @@ if (favourite === 23) {
 
 if (favourite !== 23) console.log("Why not 23?");
 */
+
+
+//      LOGICAL OPERATORS
+
+/*
+const hasDriversLicense = true; // A
+const hasGoodVision = true; // B
+
+console.log(hasDriversLicense && hasGoodVision); // AND
+console.log(hasDriversLicense || hasGoodVision); // OR
+console.log(!hasDriversLicense); // NOT
+
+// const shouldDrive = hasDriversLicense && hasGoodVision;
+
+// should declare in if
+// if (hasDriversLicense && hasGoodVision) {
+//     console.log("Sarah is able to drive.")
+// } else {
+//     console.log("Someone else should drive!")
+// }
+
+
+const isTired = false; // C
+console.log(hasDriversLicense && hasGoodVision && isTired);
+
+if (hasDriversLicense && hasGoodVision && !isTired) {
+    console.log("Sarah is able to drive.")
+} else {
+    console.log("Someone else should drive!")
+}
+*/
