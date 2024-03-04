@@ -131,3 +131,26 @@ const averageAge = (ageRafael + ageSarah) / 2; // the right way with ()
 console.log(ageRafael, ageSarah, averageAge);
 */
 
+
+
+//      STRINGS AND TEMPLATE LITERALS
+
+
+const firstName = "Rafael";
+const job = "Student";
+const birthYear = 2004;
+const year = 2024;
+
+// const rafael = "I'm " + firstName + ", a " + (year - birthYear) + " years old " + job + ".";
+// console.log(rafael);
+
+const rafaelNew = `I'm ${firstName}, a ${year - birthYear} years old ${job}.`;
+console.log(rafaelNew);
+
+console.log("String with \n\
+multiple \n\
+lines");
+
+console.log(`String with
+multiple 
+lines`);
