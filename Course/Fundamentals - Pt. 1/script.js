@@ -1,4 +1,4 @@
-//      LINKING JS FILE 
+//      LINKING JS FILE
 /*
 let js = 'amazing';
 console.log(40+90-50);
@@ -83,7 +83,7 @@ console.log("+= operator: x + 8 = ", x);
 
 
 // *= operator
-x *= 4; // x = x * 4 = ((10+6) + 8) * 4 = 24 * 4 = 96 
+x *= 4; // x = x * 4 = ((10+6) + 8) * 4 = 24 * 4 = 96
 console.log("*= operator: x = x * 4 = 24 * 4 = ", x);
 
 
@@ -97,8 +97,8 @@ x++; // x = x + 1
 console.log("x++ operator: x + 1 = ", x);
 
 
-// -- operator 
-x--; // x = x -1 
+// -- operator
+x--; // x = x -1
 console.log("x-- operator: x - 1 = ", x);
 
 
@@ -152,7 +152,7 @@ multiple \n\
 lines");
 
 console.log(`String with
-multiple 
+multiple
 lines`);
 */
 
@@ -221,9 +221,10 @@ console.log("23" * "2");
 let n = "1" + 1;
 n = n - 1;
 console.log(n);
-// With the "+" operator, it converts to a string: "1" + 1 = 11 
+// With the "+" operator, it converts to a string: "1" + 1 = 11
 // With the "-" operator converts the string to a number: n = 11 - 1 = 10
 */
+
 
 
 //      TRUTHY AND FALSY VALUES
@@ -255,4 +256,67 @@ if (height) {
 // This returns the else block because "height" is "undefined" = falsy value
 // same would happen if the "height = 0" = falsy value
 // if let height = 123, then the "if" block would be executed
+*/
+
+
+
+//      EQUALITY OPERATORS == VS. ===
+
+/*
+const age = "18";
+if (age === 18) console.log("You just became an adult (strict)");
+
+if (age == 18) console.log("You just became an adult (loose)");
+
+
+const favourite = prompt("What's your favourite number?");
+console.log(favourite);
+console.log(typeof favourite);
+
+if (favourite == 23) { // "23" == 23 | COERCION
+    console.log("Cool, that's an amazing number");
+}
+
+
+const age = Number(prompt("What's your age?"));
+console.log(age);
+console.log(typeof age);
+
+if (age === 20) { // 20 === 20 | NO COERCION
+    console.log("You are 20 years old");
+}
+
+
+const fingers = Number(prompt("How many fingers do you have?"));
+console.log(fingers);
+console.log(typeof fingers);
+
+if (fingers === 10) {
+    console.log("Nice, you have all your fingers.")
+} else if (fingers === 5) {
+    console.log("You have all your fingers in your hand.")
+} else {
+    console.log("You lost a few fingers.")
+}
+
+const favourite = Number(prompt("What's your favourite number?"));
+console.log(favourite);
+console.log(typeof favourite);
+
+if (favourite === 23) {
+    console.log("Cool! 23 is an amazing number!")
+} else if (favourite === 7) {
+    console.log("7 is also a cool number")
+} else if (favourite === 9) {
+    console.log("9 is also a cool number")
+} else {
+    console.log("Number is not 23 or 7 or 9")
+}
+
+
+// Different Operator
+// != loose operator
+// !== strict operator
+
+if (favourite !== 23) console.log("Why not 23?");
 */
