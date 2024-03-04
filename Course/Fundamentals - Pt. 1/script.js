@@ -188,6 +188,7 @@ console.log(century);
 
 //      TYPE CONVERSION AND COERCION
 
+/*
 // Type Conversion
 
 const inputYear = "2004";
@@ -222,5 +223,36 @@ n = n - 1;
 console.log(n);
 // With the "+" operator, it converts to a string: "1" + 1 = 11 
 // With the "-" operator converts the string to a number: n = 11 - 1 = 10
+*/
 
 
+//      TRUTHY AND FALSY VALUES
+
+/*
+// 5 falsy values: 0, "", undefined, null, NaN
+
+console.log(Boolean(0));            // false
+console.log(Boolean(undefined) );   // false
+console.log(Boolean("Rafael"));     // true
+console.log(Boolean({}));           // true
+console.log(Boolean(""));           // false
+
+const money = 0;
+if (money) {
+    console.log("Don't spend it all");
+} else {
+    console.log("You should get a job!");
+}
+// JS will execute the else block because 0 is considered falsy
+
+
+let height;
+if (height) {
+    console.log("Height is defined.");
+} else {
+    console.log("Height is undefined.");
+}
+// This returns the else block because "height" is "undefined" = falsy value
+// same would happen if the "height = 0" = falsy value
+// if let height = 123, then the "if" block would be executed
+*/
