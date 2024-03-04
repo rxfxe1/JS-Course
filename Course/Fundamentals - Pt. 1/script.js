@@ -184,3 +184,43 @@ if (birthYear <= 2000) {
 console.log(century);
 */
 
+
+
+//      TYPE CONVERSION AND COERCION
+
+// Type Conversion
+
+const inputYear = "2004";
+console.log(Number(inputYear), inputYear);
+console.log(Number(inputYear) + 18);
+
+console.log(Number("Jonas"));
+console.log(typeof NaN);
+
+console.log(String(23), 23);
+
+
+// Type Coercion
+
+console.log("I'am " + 20 + " years old.");
+console.log("I'am " + "20" + " years old."); // same thing
+console.log("I'am " + String(20) + " years old."); // same thing
+
+console.log("23" - "10" - 3);
+// The "-" operator converted the strings to numbers.
+
+console.log("23" + "10" + 3);
+// The "+" operator converts the numbers to strings.
+// So console.log("1" + 1); would be equal to 11, because it concatenates the strings.
+
+console.log("23" * "2");
+// It converts to numbers and calculates the result.
+// Same for "/"
+
+let n = "1" + 1;
+n = n - 1;
+console.log(n);
+// With the "+" operator, it converts to a string: "1" + 1 = 11 
+// With the "-" operator converts the string to a number: n = 11 - 1 = 10
+
+
