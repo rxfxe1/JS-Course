@@ -351,3 +351,32 @@ if (hasDriversLicense && hasGoodVision && !isTired) {
     console.log("Someone else should drive!")
 }
 */
+
+
+//      SWITCH STATEMENT
+
+const day = "monday";
+
+switch (day) {
+    case "monday": // day === "monday"
+        console.log("First day of the week.");
+        console.log("Let's work"); // we can have multiple lines of code in each case
+        break;
+    case "tuesday":
+        console.log("It's tuesday, second day of the week");
+        break;
+    case "wednesday":
+    case "thursday": // if we have the same lines for 2 cases, we can put the cases together like this
+        console.log("Working from home today");
+        break;
+    case "friday":
+        console.log("Final day of the week.");
+        break;
+    case "saturday":
+    case "sunday":
+        console.log("Enjoy the weekend! :)");
+        break;
+    default: // if none of the cases match, we can have a default statement
+        console.log("Not a valid day");
+        break; // technically not needed but for precaunionary measures
+}
