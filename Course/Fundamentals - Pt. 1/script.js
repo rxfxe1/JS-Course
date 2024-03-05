@@ -417,3 +417,25 @@ if (23 > 10) {
     const str = "23 is bigger";
 }
 */
+
+
+//      CONDITIONAL (TERNARY) OPERATOR
+
+/*
+const age = 20;
+// age >= 18 ? console.log("You can vote.") : console.log("You can't vote yet.");
+
+const drink = age >= 18  ? "Wine" : "Water";
+console.log(drink);
+
+let drink2;
+if (age >= 18) {
+    drink2 = "wine 🍷";
+} else {
+    drink2 = "water 💧";
+}
+console.log(drink2);
+
+// conditional inside template literal:
+console.log(`I like to drink ${age >= 18  ? "Wine" : "Water"}.`);
+*/
