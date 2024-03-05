@@ -355,19 +355,20 @@ if (hasDriversLicense && hasGoodVision && !isTired) {
 
 //      SWITCH STATEMENT
 
-const day = "monday";
+/*
+const day = "sunday";
 
 switch (day) {
-    case "monday": // day === "monday"
+    case "monday": // switch statement does a strict comparison like this: day === "monday"
         console.log("First day of the week.");
-        console.log("Let's work"); // we can have multiple lines of code in each case
-        break;
+        console.log("Let's work."); // we can have multiple lines of code in each case
+        break; // without this break, JS would execute all cases until it finds a break statement
     case "tuesday":
-        console.log("It's tuesday, second day of the week");
+        console.log("It's tuesday, second day of the week.");
         break;
     case "wednesday":
     case "thursday": // if we have the same lines for 2 cases, we can put the cases together like this
-        console.log("Working from home today");
+        console.log("Working from home today.");
         break;
     case "friday":
         console.log("Final day of the week.");
@@ -377,6 +378,27 @@ switch (day) {
         console.log("Enjoy the weekend! :)");
         break;
     default: // if none of the cases match, we can have a default statement
-        console.log("Not a valid day");
+        console.log("Not a valid day.");
         break; // technically not needed but for precaunionary measures
 }
+
+
+// Exercise: Try to do the switch statement with if/else
+
+if (day === "monday") {
+    console.log("First day of the week.");
+    console.log("Let's work.");
+} else if (day === "tuesday") {
+    console.log("It's tuesday, second day of the week.");
+} else if (day === "wednesday" || day === "thursday") {
+    console.log("Working from home today.");
+} else if (day === "friday") {
+    console.log("Final day of the week.");
+} else if (day === "saturday" || day === "sunday") {
+    console.log("Enjoy the weekend! :)");
+} else {
+    console.log("Not a valid day.");
+}
+
+// SUCCESS :)
+*/
