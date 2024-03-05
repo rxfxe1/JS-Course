@@ -402,3 +402,18 @@ if (day === "monday") {
 
 // SUCCESS :)
 */
+
+
+//      STATEMENTS AND EXPRESSIONS
+
+/*
+// 3 + 4
+// 2004
+// true && false && !false
+// these are expressions, they produce a value
+
+
+if (23 > 10) {
+    const str = "23 is bigger";
+}
+*/
