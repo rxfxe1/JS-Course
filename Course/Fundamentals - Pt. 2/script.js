@@ -87,3 +87,21 @@ console.log(yearsUntilRetirement(2004)); // We can directly log it
 // If we need more than 1 parameter, we just use (), i.e. (birthYear, firstName)
 // Arrow function don't get the "this" keyword
 */
+
+
+//      FUNCTIONS CALLING ANOTHER FUNCTIONS
+
+/*
+function cutFruitPieces(fruit) {
+    return fruit * 4;
+}
+
+function fruitProcessor(apples, oranges) {
+    const applePieces = cutFruitPieces(apples);
+    const orangePieces = cutFruitPieces(oranges);
+
+    const juice = `Juice with ${applePieces} piece of apple and ${orangePieces} pieces of orange.`;
+    return juice;
+}
+console.log(fruitProcessor(2, 3));
+*/
