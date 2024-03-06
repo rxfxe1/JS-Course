@@ -190,6 +190,7 @@ console.log(ages);
 
 //      BASIC ARRAY OPERATIONS (METHODS)
 
+/*
 // push method
 const friends = ["Michael", "Sarah", "John"];
 // friends.push("Jay");
@@ -243,4 +244,4 @@ console.log(friends.includes(23)); // true
 if (friends.includes("Michael")) { // since this returns a boolean
     console.log("You have a friend called Michael");
 }
-
+*/
