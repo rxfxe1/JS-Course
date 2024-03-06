@@ -324,3 +324,51 @@ console.log(rafael.friends[0]);
 // "Rafael has 3 friends and his best friend is Michael"
 console.log(`${rafael.firstName} has ${rafael.friends.length} friends and his best friend is ${rafael.friends[0]}`);
 */
+
+
+//      OBJECT METHODS
+
+// function inside object = method
+const rafael = {
+    firstName: 'Rafael',
+    lastName: 'Silva',
+    birthYear: 2004, // number value
+    job: 'student', // string value
+    friends: ['Michael', 'Jonas', 'Sarah'], // array value
+    hasDriversLicense: true, // boolean value
+
+    // calcAge: function (birthYear) { // function value
+    //     return 2024 - birthYear
+    // }
+
+    // calcAge: function () {
+    //     console.log(this); // logs the object
+    //     return 2024 - this.birthYear
+    // }
+
+    calcAge: function () {
+        this.age = 2024 - this.birthYear;
+        return this.age;
+    },
+
+    // challenge correction
+    getSummary: function () {
+        return `${this.firstName} is a ${this.calcAge()} years old ${this.job} and he has ${this.hasDriversLicense ? "a" : "no"} driver's license.`
+    }
+};
+// "this" keyword -> DRY principle
+
+// console.log(rafael.calcAge(2004)); // dot notation
+// console.log(rafael['calcAge'](2004)); // bracket notation
+
+console.log(rafael.calcAge());
+console.log(rafael.age);
+
+
+// challenge
+// "Rafael is a 20 yo student and he has a/no drivers license"
+
+//my answer
+// rafael.getSummary = console.log(`${rafael.firstName} is a ${rafael.age} years old ${rafael.job} and he has ${rafael.hasDriversLicense ? "a" : "no"} drivers license`);
+console.log(rafael.getSummary());
+
