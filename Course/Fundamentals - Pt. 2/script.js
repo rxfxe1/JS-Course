@@ -268,3 +268,59 @@ const rafael = {
     friends: ['Michael', 'Jonas', 'Sarah']
 };
 */
+
+
+//      DOT VS BRACKET NOTATIONS
+
+/*
+const rafael = {
+    firstName: 'Rafael',
+    lastName: 'Silva',
+    age: 2024 - 2004,
+    job: 'student',
+    friends: ['Michael', 'Jonas', 'Sarah']
+};
+console.log(rafael);
+
+// dot notation
+console.log(rafael.firstName); // . is an operator
+
+// bracket notation
+console.log(rafael['lastName']);
+
+// this only works with bracket notation
+// computed property name: first + Name = firstName bc concatenation
+const nameKey = 'Name';
+console.log(rafael['first' + nameKey]);
+console.log(rafael['last' + nameKey]);
+
+
+// when to use bracket notation
+const interestedIn = prompt("What do you want to know about Rafael? Choose between firstName, lastName, age, job and friends.");
+// console.log(rafael.interestedIn); // doesn't work bc interestedIn is not a property of rafael
+console.log(rafael[interestedIn]); // works 
+
+// to prevent showing undefined
+if (rafael[interestedIn]) {
+    console.log(rafael[interestedIn]);
+} else {
+    console.log("Wrong input.");
+};
+
+
+
+// add new properties
+// dot notation
+rafael.location = "Portugal";
+
+// bracket notation
+rafael['phone'] = 912345678;
+
+console.log(rafael);
+console.log(rafael.friends[0]);
+
+
+// challenge
+// "Rafael has 3 friends and his best friend is Michael"
+console.log(`${rafael.firstName} has ${rafael.friends.length} friends and his best friend is ${rafael.friends[0]}`);
+*/
