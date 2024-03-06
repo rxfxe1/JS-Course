@@ -245,3 +245,26 @@ if (friends.includes("Michael")) { // since this returns a boolean
     console.log("You have a friend called Michael");
 }
 */
+
+
+//      INTRODUCTION TO OBJECTS
+
+/*
+// array
+const rafaelsArray = [
+    'Rafael',
+    'Silva',
+    2024 - 2004,
+    'student',
+    ['Michael', 'Jonas', 'Sarah']
+];
+
+// object
+const rafael = {
+    firstName: 'Rafael', // firstName / key = property
+    lastName: 'Silva',
+    age: 2024 - 2004,
+    job: 'student',
+    friends: ['Michael', 'Jonas', 'Sarah']
+};
+*/
