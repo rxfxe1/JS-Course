@@ -458,7 +458,6 @@ for (let i = 0; i < rafaels.length; i++) {
     if (typeof rafaels[i] == 'number') break; // stop after number is found
     console.log(rafaels[i], typeof rafaels[i]);
 }
-*/
 
 
 //      Looping Backwards and Loops in Loops
@@ -486,3 +485,22 @@ for (let exercise = 1; exercise <= 3; exercise++) {
         console.log(`Exercise: ${exercise}: Repetition #${rep}`);
     };
 }
+
+
+//      The while Loop
+
+// the while loop will run while the condition is TRUE
+let rep = 1;
+while (rep <= 5) {
+    // console.log(`WHILE: Lifting weights repetition ${rep}`);
+    rep++;
+}
+
+let dice = Math.trunc(Math.random() * 6) + 1;
+
+while (dice !== 6) {
+    console.log(`You rolled a ${dice}`);
+    dice = Math.trunc(Math.random() * 6) + 1;
+    if (dice === 6) console.log(`You rolled a ${dice}. That's a win!`);
+}
+*/
