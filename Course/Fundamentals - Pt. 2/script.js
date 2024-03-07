@@ -377,7 +377,7 @@ console.log(rafael.getSummary());
 
 //      LOOPS
 
-
+/*
 //      Iteration: The for Loop
 
 // console.log('Lifting weights repetition 1');
@@ -386,7 +386,7 @@ console.log(rafael.getSummary());
 // console.log('Lifting weights repetition 4');
 // console.log('Lifting weights repetition 5');
 
-// instead of this 
+// instead of this
 
 // for loop keeps runnig while condition TRUE
 for (let rep = 1; rep <= 5; rep++) {
@@ -396,7 +396,6 @@ for (let rep = 1; rep <= 5; rep++) {
 
 //      Looping Arrays, Breaking and Continuing
 
-/*
 const rafaels = [
     'Rafael',
     'Silva',
@@ -460,3 +459,30 @@ for (let i = 0; i < rafaels.length; i++) {
     console.log(rafaels[i], typeof rafaels[i]);
 }
 */
+
+
+//      Looping Backwards and Loops in Loops
+
+const rafael = [
+    'Rafael',
+    'Silva',
+    2024 - 2004,
+    'student',
+    ['Michael', 'Jonas', 'Sarah']
+];
+
+// 0, 1, ..., 4
+// 4, 3, ..., 0
+
+for (let i = rafael.length - 1; i >= 0; i--) {
+    console.log(i, rafael[i]);
+}
+
+// loop inside a loop
+for (let exercise = 1; exercise <= 3; exercise++) {
+    console.log(`------ Starting exercise ${exercise}:`);
+
+    for (let rep = 1; rep <= 5; rep++) {
+        console.log(`Exercise: ${exercise}: Repetition #${rep}`);
+    };
+}
