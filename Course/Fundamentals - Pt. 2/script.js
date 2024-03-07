@@ -298,7 +298,7 @@ console.log(rafael['last' + nameKey]);
 // when to use bracket notation
 const interestedIn = prompt("What do you want to know about Rafael? Choose between firstName, lastName, age, job and friends.");
 // console.log(rafael.interestedIn); // doesn't work bc interestedIn is not a property of rafael
-console.log(rafael[interestedIn]); // works 
+console.log(rafael[interestedIn]); // works
 
 // to prevent showing undefined
 if (rafael[interestedIn]) {
@@ -328,6 +328,7 @@ console.log(`${rafael.firstName} has ${rafael.friends.length} friends and his be
 
 //      OBJECT METHODS
 
+/*
 // function inside object = method
 const rafael = {
     firstName: 'Rafael',
@@ -371,4 +372,91 @@ console.log(rafael.age);
 //my answer
 // rafael.getSummary = console.log(`${rafael.firstName} is a ${rafael.age} years old ${rafael.job} and he has ${rafael.hasDriversLicense ? "a" : "no"} drivers license`);
 console.log(rafael.getSummary());
+*/
 
+
+//      LOOPS
+
+
+//      Iteration: The for Loop
+
+// console.log('Lifting weights repetition 1');
+// console.log('Lifting weights repetition 2');
+// console.log('Lifting weights repetition 3');
+// console.log('Lifting weights repetition 4');
+// console.log('Lifting weights repetition 5');
+
+// instead of this 
+
+// for loop keeps runnig while condition TRUE
+for (let rep = 1; rep <= 5; rep++) {
+    console.log(`Lifting weights repetition ${rep}`);
+}
+
+
+//      Looping Arrays, Breaking and Continuing
+
+/*
+const rafaels = [
+    'Rafael',
+    'Silva',
+    2024 - 2004,
+    'student',
+    ['Michael', 'Jonas', 'Sarah'],
+    true
+];
+
+const types = [];  // empty array to store the type of data in
+
+// console.log(rafael[0]);
+// console.log(rafael[1]);
+// ...
+// console.log(rafael[4]);
+// rafael[5] does NOT exist
+
+// for (let i = 0; i < 5; i++) {
+//     console.log(rafaels[i]);
+// }
+
+// so instead of 5, we write
+for (let i = 0; i < rafaels.length; i++) {
+    // reading from array
+    console.log(rafaels[i], typeof rafaels[i]);
+
+    // storing the type of data on each
+    // types[i] = typeof rafaels[i];
+
+    // another way to add elements to an array
+    types.push(typeof rafaels[i]);
+}
+console.log(types);
+
+
+// example: age calculator with loop
+const years = [1977, 1982, 2002, 2004, 2010];
+const ages = [];
+
+for (let i = 0; i < years.length; i++) {
+    ages.push(2024 - years[i]);
+}
+
+console.log(ages);
+
+
+//      Continue and Break Statement
+
+// continue statement -> skip current iteration and move to next one
+console.log('--- ONLY STRINGS ---');
+for (let i = 0; i < rafaels.length; i++) {
+    if (typeof rafaels[i] !== 'string') continue; // skip non-strings
+    console.log(rafaels[i], typeof rafaels[i]);
+}
+
+// break statement -> stop the entire loop
+// break with number
+console.log('--- BREAK WITH NUMBER ---');
+for (let i = 0; i < rafaels.length; i++) {
+    if (typeof rafaels[i] == 'number') break; // stop after number is found
+    console.log(rafaels[i], typeof rafaels[i]);
+}
+*/
