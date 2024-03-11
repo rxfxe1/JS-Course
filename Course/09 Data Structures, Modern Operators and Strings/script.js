@@ -36,19 +36,75 @@ const restaurant = {
       `Order received! ${this.starterMenu[starterIndex]} and ${this.mainMenu[mainIndex]} will be delivered at ${address} at ${time}`
     );
   },
+
+  orderPasta: function (ing1, ing2, ing3) {
+    console.log(`Here is your delicious pasta with ${ing1}, ${ing2}, ${ing3}`);
+  },
 };
 
-restaurant.orderDelivery({
-  time: '22:30',
-  address: 'Via del Sole, 21',
-  mainIndex: 2,
-  starterIndex: 2,
-});
+/*
+//    THE SPREAD OPERATOR
 
-restaurant.orderDelivery({
-  address: 'Via del Sole, 21',
-  starterIndex: 1,
-});
+const arr = [7, 8, 9];
+const oldWayArr = [1, 2, arr[0], arr[1], arr[2]];
+// no good
+
+const newWayArr = [1, 2, ...arr];
+// console.log(newWayArr);
+// good
+
+// console.log(...newWayArr);
+// console.log(1, 2, 7, 8, 9);
+
+const newMenu = [...restaurant.mainMenu, 'Gnocci'];
+// console.log(newMenu);
+
+// copy array
+const mainMenuCopy = [...restaurant.mainMenu];
+
+// Join 2 arrays
+const wholeMenu = [...restaurant.mainMenu, ...restaurant.starterMenu];
+console.log(wholeMenu);
+
+// Iterables are arrays, strings, maps, sets but NOT objects
+
+const str = 'Rafael';
+const letters = [...str]; // [...str, '', 'S.']
+console.log(letters); // ['R', 'a', 'f', 'a', 'e', 'l']
+console.log(...str); // R a f a e l
+
+// Multiple values separated by a comma,
+// are usually only expected when we pass arguments 
+// into a function, or when we build a new array.
+
+
+// Real-life example
+const ingredients = [prompt("Let's make pasta! Ingredient 1?"), prompt('Ingredient 2?'), prompt('Ingredient 3?')];
+console.log(ingredients);
+
+// restaurant.orderPasta(ingredients[0], ingredients[1], ingredients[2]);
+restaurant.orderPasta(...ingredients);
+
+// Objects
+const newRestaurant = { foundedIn: 2023, ...restaurant, founder: 'José' };
+console.log(newRestaurant);
+
+const restaurantCopy = { ...restaurant };
+restaurantCopy.name = "Cá T'Espero";
+console.log(restaurantCopy.name);
+console.log(restaurant.name);
+
+// restaurant.orderDelivery({
+//   time: '22:30',
+//   address: 'Via del Sole, 21',
+//   mainIndex: 2,
+//   starterIndex: 2,
+// });
+
+// restaurant.orderDelivery({
+//   address: 'Via del Sole, 21',
+//   starterIndex: 1,
+// });
 
 // Destructuring Objects
 
@@ -79,11 +135,10 @@ const { fri } = openingHours;
 const {
   fri: { open, close },
 } = openingHours;
-console.log(open, close);
+// console.log(open, close);
 // this will only log the values of the properties of the object fri
 // we could also change the properties names
 
-/*
 // Destructuring Arrays
 const arr = [2, 3, 4];
 const a = arr[0];
