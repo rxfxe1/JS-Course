@@ -192,6 +192,17 @@ const books = [
   },
 ];
 
+// 3.1
+const bookAuthors = [...books[0].author, ...books[1].author];
+// console.log(bookAuthors);
+
+// 3.2
+const spellWord = function (word) {
+  console.log(...word);
+};
+spellWord('JavaScript');
+
+/*
 // Destructuring Objects
 
 // 2.1
@@ -243,3 +254,4 @@ const [[, rating], [, ratingsCont]] = ratings;
 const ratingStars = [63405, 1808];
 const [fiveStarRatings, oneStarRating, threeStarRatings = 0] = ratingStars;
 // console.log(fiveStarRatings, oneStarRating, threeStarRatings);
+*/
