@@ -30,7 +30,25 @@ const restaurant = {
   order: function (starterIndex, mainIndex) {
     return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
   },
+
+  orderDelivery: function ({ starterIndex = 1, mainIndex = 0, address, time = '20:00' }) {
+    console.log(
+      `Order received! ${this.starterMenu[starterIndex]} and ${this.mainMenu[mainIndex]} will be delivered at ${address} at ${time}`
+    );
+  },
 };
+
+restaurant.orderDelivery({
+  time: '22:30',
+  address: 'Via del Sole, 21',
+  mainIndex: 2,
+  starterIndex: 2,
+});
+
+restaurant.orderDelivery({
+  address: 'Via del Sole, 21',
+  starterIndex: 1,
+});
 
 // Destructuring Objects
 
@@ -40,6 +58,30 @@ const { name, openingHours, categories } = restaurant;
 // Changing properties names
 const { name: restaurantName, openingHours: hours, categories: tags } = restaurant;
 // console.log(restaurantName, hours, tags);
+
+// Default values
+// since menu doesn't exist it'll create a default value
+const { menu = [], starterMenu: starters = [] } = restaurant;
+// console.log(menu, starters);
+
+// Mutating variables
+let a = 111;
+let b = 222;
+const obj = { a: 23, b: 7, c: 14 };
+
+({ a, b } = obj);
+// to override a & b we need parenthesis or else JS interprets it wrong
+// console.log(a, b);
+
+// Nested objects
+const { fri } = openingHours;
+// fri is an object, to destructure it we do:
+const {
+  fri: { open, close },
+} = openingHours;
+console.log(open, close);
+// this will only log the values of the properties of the object fri
+// we could also change the properties names
 
 /*
 // Destructuring Arrays
